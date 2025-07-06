@@ -1,0 +1,9 @@
+show tables;
+
+CREATE TABLE new(
+     Id varchar(50) primary key,
+    username varchar(50) unique,
+    email varchar(50) not null unique,
+    password varchar(50) not null
+);
+

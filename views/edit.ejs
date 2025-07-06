@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+</head>
+<body>
+       <h1>You can edit username of email:<%= user.email %></h1>
+  <form method="POST" action="http://localhost:8080/show/<%= user.Id %>?_method=PATCH">
+        <input type="text" placeholder="<%=user.username%>" name="username">
+        <input type="password" name="password" placeholder="enter password">
+        <button>Submit</button>
+    </form>
+    <a href="http://localhost:8080/show"><button>Back</button></a>
+</body>
+</html>
